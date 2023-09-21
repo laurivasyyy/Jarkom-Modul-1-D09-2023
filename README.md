@@ -37,7 +37,12 @@ Dapat dilihat melalui gambar diatas bahwa sequence number (raw) pada frame ke-14
 Berdasarkan gambar diatas, acknowledge number (raw) pada frame ke-149 adalah <ins>**258040696**</ins>
 
 ## **Nomor 2**
-Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
+**Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!**
+
+**Solusi :**
+Berdasarkan link yang mengarah ke portal praktikum jarkom disitu terlihat bahwa ip yang digunakan adalah 10.21.78.111. Untuk mencari packet yang menggunakan ip tersebut kita bisa melakukan display filter dengan perintah ```ip.src == 10.21.78.111```, setelah ditemukan packet yang dicari selantunya cek di http stream dan disitu bisa terlihat bahwa web server yang digunakan adalah gunicorn
+
+![no.2](https://github.com/laurivasyyy/Jarkom-Modul-1-D09-2023/blob/main/img/no.%202.png)
 
 ## **Nomor 3**
 **Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:**
@@ -95,11 +100,13 @@ Berdasarkan gambar diatas, IP yang merupakan public IP adalah <ins>**74.53.140.1
 **Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.**
 
 **Solusi :**
+Di nomor packet 7812 source addressnya adalah 104.18.14.101. Berdasarkan clue yang ada di soal yang berbunyi a1 e5 u21 itu menandakan urutan abjad, sehingga yang harus dilakukan adalah merubah source address tadi menjadi abjad. Berdasarkan cara itu didapatkan bahwa 10 = J, 4 = D, 18 = R, 14 = N, 10 = J, 1 = A, sehingga didapatkan jawaban yang dicari adalah JDRNJA.
 
 ## **Nomor 7**
 **Berapa jumlah packet yang menuju IP 184.87.193.88?**
 
 **Solusi :**
+Untuk mencari packet yang menuju IP 184.87.193.88 kita bisa menggunakan perintah ```ip.dst == 184.87.193.88``` di display filter, dan bisa dilihat bahwa jumlah packet yang menuju IP 184.87.193.88 ada 6 packet.
 
 ## **Nomor 8**
 **Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)**
@@ -112,11 +119,14 @@ Berdasarkan gambar diatas, IP yang merupakan public IP adalah <ins>**74.53.140.1
 **Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!**
 
 **Solusi :**
+Kueri filternya adalah ```ip.src == 10.51.40.1 && ip.dst != 10.39.55.34```
+![no.9](https://github.com/laurivasyyy/Jarkom-Modul-1-D09-2023/blob/main/img/no.%209.png)
 
 ## **Nomor 10**
 **Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet**
 
 **Solusi :**
+Kita bisa menggunakan perintah ```telnet contains "Login"``` dan mengecek tcp stream dari packet yang muncul dan disitu bisa dilihat jawaban yang diinginkan di login dan password.
 
 
 
