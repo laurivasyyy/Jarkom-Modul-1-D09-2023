@@ -101,12 +101,14 @@ Berdasarkan gambar diatas, IP yang merupakan public IP adalah <ins>**74.53.140.1
 
 **Solusi :**
 Di nomor packet 7812 source addressnya adalah 104.18.14.101. Berdasarkan clue yang ada di soal yang berbunyi a1 e5 u21 itu menandakan urutan abjad, sehingga yang harus dilakukan adalah merubah source address tadi menjadi abjad. Berdasarkan cara itu didapatkan bahwa 10 = J, 4 = D, 18 = R, 14 = N, 10 = J, 1 = A, sehingga didapatkan jawaban yang dicari adalah JDRNJA.
+![no.6](https://github.com/laurivasyyy/Jarkom-Modul-1-D09-2023/blob/main/img/no%206.png)
 
 ## **Nomor 7**
 **Berapa jumlah packet yang menuju IP 184.87.193.88?**
 
 **Solusi :**
 Untuk mencari packet yang menuju IP 184.87.193.88 kita bisa menggunakan perintah ```ip.dst == 184.87.193.88``` di display filter, dan bisa dilihat bahwa jumlah packet yang menuju IP 184.87.193.88 ada 6 packet.
+![no.7](https://github.com/laurivasyyy/Jarkom-Modul-1-D09-2023/blob/main/img/no%207_1.png)
 
 ## **Nomor 8**
 **Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)**
@@ -127,6 +129,9 @@ Kueri filternya adalah ```ip.src == 10.51.40.1 && ip.dst != 10.39.55.34```
 
 **Solusi :**
 Kita bisa menggunakan perintah ```telnet contains "Login"``` dan mengecek tcp stream dari packet yang muncul dan disitu bisa dilihat jawaban yang diinginkan di login dan password.
+![no.10_1](https://github.com/laurivasyyy/Jarkom-Modul-1-D09-2023/blob/main/img/no%2010_1.png)
+![no.10_2](https://github.com/laurivasyyy/Jarkom-Modul-1-D09-2023/blob/main/img/no%2010_2.png)
+![no.10_3](https://github.com/laurivasyyy/Jarkom-Modul-1-D09-2023/blob/main/img/no.%2010.png)
 
 
 
