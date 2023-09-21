@@ -81,7 +81,7 @@ Password yang diperoleh adalah NWltcGxlUGFzNXdvcmQ= lalu kita decode di [Base64]
 
 Terdapat <ins>**60**</ins> packet yang berhasil di capture dari file pcap tersebut.
 
-https://github.com/laurivasyyy/Jarkom-Modul-1-D09-2023/blob/a554b899f4de80493edbde98153d4e40c41ae239/img/no.%205b-c.png
+![no. 5c-d](https://github.com/laurivasyyy/Jarkom-Modul-1-D09-2023/blob/a554b899f4de80493edbde98153d4e40c41ae239/img/no.%205b-c.png)
 
 #### Port berapakah pada server yang digunakan untuk service SMTP?**
 ---
